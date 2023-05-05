@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className='header contenedor'>
       <nav className='header__nav'>
-        <img src="/images/logo.svg" alt="Image logo" />
+        <img src="images/logo.svg" alt="Image logo" />
         <a className='header__a' href="#">features</a>
         <a className='header__a' href="#">pricing</a>
         <a className='header__a' href="#">resources</a>
@@ -23,7 +23,7 @@ export default function Header() {
         <a className='btn-primary' href="#">sign up</a>
       </nav>
       <nav className='header__mobile'>
-        <img src="/images/logo.svg" alt="Image logo" />
+        <img src="images/logo.svg" alt="Image logo" />
         {menuMobile ? (
           <div onClick={() => { handleClickMenu() }}>
             <svg xmlns="http://www.w3.org/2000/svg" fill='gray' width="34" height="34" viewBox="0 0 24 24">

@@ -32,7 +32,7 @@ function App() {
         <div className='main__grid contenedor'>
           <div className='card'>
             <div className='card__circle'>
-              <img className='card__icon' src="/images/icon-brand-recognition.svg" alt="icon recognition" />
+              <img className='card__icon' src="images/icon-brand-recognition.svg" alt="icon recognition" />
             </div>
             <h3 className='card__title'>Brand Recognition</h3>
             <p className='card__text'>
@@ -42,7 +42,7 @@ function App() {
           </div>
           <div className='card'>
             <div className='card__circle'>
-              <img className='card__icon' src="/images/icon-detailed-records.svg" alt="icon detail" />
+              <img className='card__icon' src="images/icon-detailed-records.svg" alt="icon detail" />
             </div>
             <h3 className='card__title'>Detailed Records</h3>
             <p className='card__text'>
@@ -52,7 +52,7 @@ function App() {
           </div>
           <div className='card'>
             <div className='card__circle'>
-              <img className='card__icon' src="/images/icon-fully-customizable.svg" alt="icon fully" />
+              <img className='card__icon' src="images/icon-fully-customizable.svg" alt="icon fully" />
             </div>
             <h3 className='card__title'>Fully Customizable</h3>
             <p className='card__text'>
