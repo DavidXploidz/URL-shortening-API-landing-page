@@ -1,0 +1,105 @@
+/* Main Styles */
+.main{
+    background-color: var(--GrayMain);
+    padding: 5rem 0 10rem 0;
+    min-height: 100vh;
+}
+.main__title{
+    color: var(--VeryDarkViolet);
+    font-size: var(--step-3);
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.main__text{
+    color: var(--GrayishViolet);
+    text-align: center;
+    padding: 0 1rem;
+}
+.main__text--span{
+    display: block;
+}
+.main__grid{
+    display: grid;
+    place-items: center;
+    gap: 4rem;
+    margin-top: 8rem;
+}
+/* Main Card Styles */
+.card{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+.card:nth-child(4){
+    position: absolute;
+    background-color: var(--Cyan);
+    width: 10px;
+    height: 50%;
+    z-index: 1;
+    padding: 0;
+}
+.card__title{
+    font-size: var(--step-1);
+    font-weight: 700;
+    color: var(--VeryDarkBlue);
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+.card__text{
+    color: var(--GrayishViolet);
+}
+.card__circle{
+    border-radius: 50%;
+    background-color: var(--DarkViolet);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -2rem;
+    left: calc(50% - 35px);
+    display: grid;
+}
+.card__icon{
+    place-self: center;
+}
+@media (min-width: 768px){ 
+    .main__grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 20px);
+        gap: 2rem;
+    }
+    .card{
+        text-align: left;
+    }
+    .card:nth-child(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 4;
+        z-index: 2;
+    }
+    .card:nth-child(2){
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        z-index: 2;
+    }
+    .card:nth-child(3){
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        z-index: 2;
+    }
+    .card:nth-child(4){
+        position: unset;
+        background-color: var(--Cyan);
+        height: 10px;
+        width: 100%;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        z-index: 1;
+        padding: 0;
+    }
+    .card__circle{
+        left: 2rem;
+    }
+}

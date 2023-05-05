@@ -1,0 +1,21 @@
+/* Section Boost Styles */
+.section-boost{
+    padding: 3rem 0;
+    background-color: var(--DarkViolet);
+    background-image: url(/images/bg-boost-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.section-boost__title{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: var(--step-3);
+    margin: 1rem 0;
+}
+@media (min-width: 768px){ 
+    .section-boost{
+        background-image: url(/images/bg-boost-desktop.svg);
+    }
+}

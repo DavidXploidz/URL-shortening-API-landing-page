@@ -1,0 +1,89 @@
+:root{
+  /* ## Colors */
+  /* ### Primary */
+  --Cyan: hsl(180, 66%, 49%);
+  --DarkViolet: hsl(257, 27%, 26%);
+  
+  /* ### Secondary */
+  --Red: hsl(0, 87%, 67%);
+  
+  /* ### Neutral */
+  --Gray: hsl(0, 0%, 75%);
+  --GrayMain: rgb(240, 241, 246);
+  --GrayishViolet: hsl(257, 7%, 63%);
+  --VeryDarkBlue: hsl(255, 11%, 22%);
+  --VeryDarkViolet: hsl(260, 8%, 14%);
+  
+  /* Fonts */
+  --fuentePrincipal: 'Poppins', sans-serif;
+  --step--2: clamp(0.69rem, calc(0.69rem + 0.04vw), 0.72rem);
+  --step--1: clamp(0.83rem, calc(0.81rem + 0.10vw), 0.90rem);
+  --step-0: clamp(1.00rem, calc(0.96rem + 0.18vw), 1.13rem);
+  --step-1: clamp(1.20rem, calc(1.13rem + 0.30vw), 1.41rem);
+  --step-2: clamp(1.44rem, calc(1.34rem + 0.47vw), 1.76rem);
+  --step-3: clamp(1.73rem, calc(1.58rem + 0.69vw), 2.20rem);
+  --step-4: clamp(2.07rem, calc(1.86rem + 0.99vw), 2.75rem);
+  --step-5: clamp(2.49rem, calc(2.18rem + 1.39vw), 3.43rem);
+  --step-6: clamp(2.99rem, calc(2.57rem + 1.92vw), 4.29rem);
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body{
+  font-size: var(--step-0);
+  font-family: var(--fuentePrincipal);
+  min-height: 100vh;
+}
+img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+}
+input, textarea, button, select{
+  font: inherit;
+}
+/* Utilidades */
+.contenedor{
+  max-width: 120rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.btn-primary{
+  background-color: var(--Cyan);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: none;
+  display: flex;
+  margin-inline: auto;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.btn-primary:hover{
+  filter: contrast(70%);
+  color: white;
+  cursor: pointer;
+}
+.btn-primary--border5{
+  border-radius: .5rem;
+  font-weight: bold;
+  width: 100%;
+}
+@media (min-width: 768px){ 
+  .btn-primary{
+    display: block;
+    margin-inline: 0;
+  }
+  .btn-primary--center{
+    margin-inline: auto;
+  }
+}

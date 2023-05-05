@@ -1,0 +1,48 @@
+/* Hero Styles */
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5rem 0;
+    margin-bottom: 3rem;
+}
+.hero__title{
+    font-size: var(--step-6);
+    font-weight: 700;
+    color: var(--VeryDarkViolet);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 3rem;
+}
+.hero__title--span{
+    display: inline;
+}
+.hero__text{
+    color: var(--GrayishViolet);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.hero__text--span{
+    display: inline;
+}
+/* Media screen 768px breakpoint */
+@media (min-width: 768px){ 
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .hero__title{
+        text-align: left;
+        margin-top: 0;
+    }
+    .hero__title--span{
+        display: block;
+    }
+    .hero__text{
+        text-align: left;
+    }
+    .hero__text--span{
+        display: block;
+    }
+}

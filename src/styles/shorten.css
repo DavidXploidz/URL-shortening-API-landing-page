@@ -1,0 +1,61 @@
+/* Shorten component styles */
+.shorten{
+    background-color: var(--DarkViolet);
+    background-image: url(/images/bg-shorten-mobile.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 120px;
+    border-radius: .5rem;
+    display: grid;
+    margin-top: -8.5rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+.shorten__form{
+    display: grid;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.shorten__input{
+    height: 42px;
+    border-radius: .5rem;
+    border: none;
+    padding: 3px 10px;
+    width: 100%;
+}
+.shorten__input--error{
+    border: 2px solid var(--Red);
+}
+.shorten__input::placeholder{
+    color: var(--VeryDarkBlue);
+}
+.shorten__input--error::placeholder{
+    color: var(--Red);
+}
+.shorten__alert{
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    color: var(--Red);
+    font-weight: 700;
+    font-style: italic;
+    font-size: var(--step--2);
+}
+@media (min-width: 768px){ 
+    .shorten{
+        background-color: var(--DarkViolet);
+        background-image: url(/images/bg-shorten-desktop.svg);
+        padding: 1rem 3rem;
+        display: grid;
+        margin-top: -8.5rem;
+        margin-bottom: 3rem;
+    }
+    .shorten__form{
+        grid-template-columns: 1fr 200px;
+    }
+    .shorten__alert{
+        top: 4.2rem;
+    }
+}
