@@ -1,7 +1,7 @@
 /* Shorten component styles */
 .shorten{
     background-color: var(--DarkViolet);
-    background-image: url(images/bg-shorten-mobile.svg);
+    background-image: url(../images/bg-shorten-mobile.svg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 @media (min-width: 768px){ 
     .shorten{
         background-color: var(--DarkViolet);
-        background-image: url(images/bg-shorten-desktop.svg);
+        background-image: url(../images/bg-shorten-desktop.svg);
         padding: 1rem 3rem;
         display: grid;
         margin-top: -8.5rem;
